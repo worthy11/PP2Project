@@ -6,17 +6,17 @@
 #include <QLabel>
 
 class GeneratorWidget {
-    QLayout* parent;
+    QWidget* parent;
 
     QString word;
-    int category = 0;
+    int category = 8; // FOODS
     QChar letter;
     int position;
     std::vector<QLabel*> letter_widgets;
     std::vector<QString> dictionary[12];
 
 public:
-    GeneratorWidget(QLayout* p);
+    GeneratorWidget(QWidget* p);
     ~GeneratorWidget();
 
     void LoadDictionary();

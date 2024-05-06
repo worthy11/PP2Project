@@ -34,8 +34,7 @@ public:
     QWidget *horizontalLayoutWidget_3;
     QHBoxLayout *TipLayout;
     QComboBox *CategoryPicker;
-    QWidget *horizontalLayoutWidget;
-    QHBoxLayout *WordDisplay;
+    QWidget *WordDisplay;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -43,12 +42,12 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(818, 539);
+        MainWindow->resize(475, 654);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         VideoFrame = new QFrame(centralwidget);
         VideoFrame->setObjectName(QString::fromUtf8("VideoFrame"));
-        VideoFrame->setGeometry(QRect(20, 20, 321, 321));
+        VideoFrame->setGeometry(QRect(140, 280, 321, 321));
         VideoFrame->setFrameShape(QFrame::StyledPanel);
         VideoFrame->setFrameShadow(QFrame::Raised);
         horizontalLayoutWidget_2 = new QWidget(VideoFrame);
@@ -59,10 +58,10 @@ public:
         VideoLayout->setContentsMargins(0, 0, 0, 0);
         WordGenerator = new QPushButton(centralwidget);
         WordGenerator->setObjectName(QString::fromUtf8("WordGenerator"));
-        WordGenerator->setGeometry(QRect(500, 200, 131, 41));
+        WordGenerator->setGeometry(QRect(160, 190, 151, 41));
         TipFrame = new QFrame(centralwidget);
         TipFrame->setObjectName(QString::fromUtf8("TipFrame"));
-        TipFrame->setGeometry(QRect(120, 360, 121, 121));
+        TipFrame->setGeometry(QRect(10, 390, 121, 121));
         TipFrame->setFrameShape(QFrame::StyledPanel);
         TipFrame->setFrameShadow(QFrame::Raised);
         horizontalLayoutWidget_3 = new QWidget(TipFrame);
@@ -85,17 +84,14 @@ public:
         CategoryPicker->addItem(QString());
         CategoryPicker->addItem(QString());
         CategoryPicker->setObjectName(QString::fromUtf8("CategoryPicker"));
-        CategoryPicker->setGeometry(QRect(460, 50, 221, 28));
-        horizontalLayoutWidget = new QWidget(centralwidget);
-        horizontalLayoutWidget->setObjectName(QString::fromUtf8("horizontalLayoutWidget"));
-        horizontalLayoutWidget->setGeometry(QRect(420, 100, 291, 80));
-        WordDisplay = new QHBoxLayout(horizontalLayoutWidget);
+        CategoryPicker->setGeometry(QRect(130, 50, 221, 28));
+        WordDisplay = new QWidget(centralwidget);
         WordDisplay->setObjectName(QString::fromUtf8("WordDisplay"));
-        WordDisplay->setContentsMargins(0, 0, 0, 0);
+        WordDisplay->setGeometry(QRect(50, 90, 371, 80));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 818, 25));
+        menubar->setGeometry(QRect(0, 0, 475, 21));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));

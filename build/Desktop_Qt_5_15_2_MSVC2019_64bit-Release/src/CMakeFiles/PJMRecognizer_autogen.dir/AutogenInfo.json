@@ -1,65 +1,65 @@
 {
-	"BUILD_DIR" : "C:/Users/slota/Documents/Qt Creator/PJMRecognizer/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src/PJMRecognizer_autogen",
-	"CMAKE_BINARY_DIR" : "C:/Users/slota/Documents/Qt Creator/PJMRecognizer/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release",
-	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/slota/Documents/Qt Creator/PJMRecognizer/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src",
+	"BUILD_DIR" : "C:/Users/kinga/Documents/Qt Creator/PP2Project/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src/PJMRecognizer_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/kinga/Documents/Qt Creator/PP2Project/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/kinga/Documents/Qt Creator/PP2Project/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/kinga/Documents/Qt Creator/PP2Project/src",
 	"CMAKE_EXECUTABLE" : "C:/Qt/Tools/CMake_64/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src/CMakeLists.txt",
+		"C:/Users/kinga/Documents/Qt Creator/PP2Project/src/CMakeLists.txt",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "C:/Users/slota/Documents/Qt Creator/PJMRecognizer",
-	"DEP_FILE" : "C:/Users/slota/Documents/Qt Creator/PJMRecognizer/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src/PJMRecognizer_autogen/deps",
+	"CMAKE_SOURCE_DIR" : "C:/Users/kinga/Documents/Qt Creator/PP2Project",
+	"DEP_FILE" : "C:/Users/kinga/Documents/Qt Creator/PP2Project/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src/PJMRecognizer_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "PJMRecognizer_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src/capturewidget.h",
+			"C:/Users/kinga/Documents/Qt Creator/PP2Project/src/capturewidget.h",
 			"MU",
 			"EWIEGA46WW/moc_capturewidget.cpp",
 			null
 		],
 		[
-			"C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src/functions.h",
+			"C:/Users/kinga/Documents/Qt Creator/PP2Project/src/functions.h",
 			"MU",
 			"EWIEGA46WW/moc_functions.cpp",
 			null
 		],
 		[
-			"C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src/generatorwidget.h",
+			"C:/Users/kinga/Documents/Qt Creator/PP2Project/src/generatorwidget.h",
 			"MU",
 			"EWIEGA46WW/moc_generatorwidget.cpp",
 			null
 		],
 		[
-			"C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src/mainwindow.h",
+			"C:/Users/kinga/Documents/Qt Creator/PP2Project/src/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
 		],
 		[
-			"C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src/model.h",
+			"C:/Users/kinga/Documents/Qt Creator/PP2Project/src/model.h",
 			"MU",
 			"EWIEGA46WW/moc_model.cpp",
 			null
 		],
 		[
-			"C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src/pylandmarkrecognizer.h",
+			"C:/Users/kinga/Documents/Qt Creator/PP2Project/src/pylandmarkrecognizer.h",
 			"MU",
 			"EWIEGA46WW/moc_pylandmarkrecognizer.cpp",
 			null
 		],
 		[
-			"C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src/styles.h",
+			"C:/Users/kinga/Documents/Qt Creator/PP2Project/src/styles.h",
 			"MU",
 			"EWIEGA46WW/moc_styles.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "C:/Users/slota/Documents/Qt Creator/PJMRecognizer/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src/PJMRecognizer_autogen/include",
-	"MOC_COMPILATION_FILE" : "C:/Users/slota/Documents/Qt Creator/PJMRecognizer/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src/PJMRecognizer_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "C:/Users/kinga/Documents/Qt Creator/PP2Project/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src/PJMRecognizer_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/Users/kinga/Documents/Qt Creator/PP2Project/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src/PJMRecognizer_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB", "WIN32" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -70,8 +70,8 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"C:/Users/slota/AppData/Local/Programs/Python/Python311/include",
-		"C:/Users/slota/OpenCV/opencv/build/include",
+		"C:/Users/kinga/AppData/Local/Programs/Python/Python310/include",
+		"C:/opencv/build/include",
 		"C:/Qt/5.15.2/msvc2019_64/include",
 		"C:/Qt/5.15.2/msvc2019_64/include/QtWidgets",
 		"C:/Qt/5.15.2/msvc2019_64/include/QtGui",
@@ -87,52 +87,52 @@
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "C:/Users/slota/Documents/Qt Creator/PJMRecognizer/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src/CMakeFiles/PJMRecognizer_autogen.dir/ParseCache.txt",
+	"PARALLEL" : 6,
+	"PARSE_CACHE_FILE" : "C:/Users/kinga/Documents/Qt Creator/PP2Project/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src/CMakeFiles/PJMRecognizer_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "C:/Qt/5.15.2/msvc2019_64/bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "C:/Qt/5.15.2/msvc2019_64/bin/uic.exe",
 	"QT_VERSION_MAJOR" : 5,
 	"QT_VERSION_MINOR" : 15,
-	"SETTINGS_FILE" : "C:/Users/slota/Documents/Qt Creator/PJMRecognizer/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src/CMakeFiles/PJMRecognizer_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "C:/Users/kinga/Documents/Qt Creator/PP2Project/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src/CMakeFiles/PJMRecognizer_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src/capturewidget.cpp",
+			"C:/Users/kinga/Documents/Qt Creator/PP2Project/src/capturewidget.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src/functions.cpp",
+			"C:/Users/kinga/Documents/Qt Creator/PP2Project/src/functions.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src/generatorwidget.cpp",
+			"C:/Users/kinga/Documents/Qt Creator/PP2Project/src/generatorwidget.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src/main.cpp",
+			"C:/Users/kinga/Documents/Qt Creator/PP2Project/src/main.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src/mainwindow.cpp",
+			"C:/Users/kinga/Documents/Qt Creator/PP2Project/src/mainwindow.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src/model.cpp",
+			"C:/Users/kinga/Documents/Qt Creator/PP2Project/src/model.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src/pylandmarkrecognizer.cpp",
+			"C:/Users/kinga/Documents/Qt Creator/PP2Project/src/pylandmarkrecognizer.cpp",
 			"MU",
 			null
 		],
 		[
-			"C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src/styles.cpp",
+			"C:/Users/kinga/Documents/Qt Creator/PP2Project/src/styles.cpp",
 			"MU",
 			null
 		]

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/slota/Documents/Qt Creator/PJMRecognizer/src
+# Install script for directory: C:/Users/kinga/Documents/Qt Creator/PP2Project/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,6 +33,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/slota/Documents/Qt Creator/PJMRecognizer/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src/PJMRecognizer.exe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/kinga/Documents/Qt Creator/PP2Project/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src/PJMRecognizer.exe")
 endif()
 

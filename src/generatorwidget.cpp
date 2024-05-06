@@ -9,8 +9,8 @@ std::string categories[12] = {
     "chartraits",
     "phystraits",
     "custom",
-    "emotions",
     "clothing",
+    "emotions",
     "geopl",
     "geoworld",
     "names",
@@ -20,7 +20,7 @@ std::string categories[12] = {
     "items"
 };
 
-GeneratorWidget::GeneratorWidget(QLayout* p): parent(p) {
+GeneratorWidget::GeneratorWidget(QWidget* p): parent(p) {
     this->LoadDictionary();
     this->SetWord();
 }
@@ -65,24 +65,20 @@ void GeneratorWidget::SetWord(){
 
     for (QChar c: word){
         QLabel* letter_widget = new QLabel;
-        letter_widget->setStyleSheet(QString{"font-size: 30px;"
-                                             "border-type: outset;"
-                                             "border-width: 2px;"
-                                             "border-color: white;"
-                                             "border-radius: 5px"});
+        letter_widget->setStyleSheet(QString{"font-size: 25px;"
+                                             "text-align: center"});
         letter_widget->setTextFormat(Qt::RichText);
         letter_widget->setText(c);
-        parent->addWidget(letter_widget);
+        parent->layout()->addWidget(letter_widget);
         letter_widgets.push_back(letter_widget);
     }
-
     position = 0;
     letter = word[0];
 }
 
 void GeneratorWidget::ClearWord(){
     for (QLabel* w: letter_widgets) {
-        parent->removeWidget(w);
+        parent->layout()->removeWidget(w);
         delete w;
     }
     letter_widgets.clear();
@@ -99,14 +95,21 @@ bool GeneratorWidget::CheckLetter(const std::string& predictions){
     }
 
     if (confidence > 10) {
-        letter_widgets[position]->setStyleSheet(QString("color: rgb(0, 255, 0); font-size: 25px"));
+        letter_widgets[position]->setStyleSheet(QString{"font-size: 25px;"
+                                                        "color: rgb(0, 255, 0)"});
         position += 1;
         if (position < word.size()) letter = word[position];
         else this->CompleteWord();
         return true;
     }
     int saturation = (confidence * 255) / 10;
-    letter_widgets[position]->setStyleSheet(QString("color: rgb(%1,%2,%3); background-color: white; font-size: 25px").arg(255 - saturation).arg(255).arg(255 - saturation));
+    letter_widgets[position]->setStyleSheet(QString{"font-size: 30px;"
+                                                    "border-radius: 5px;"
+                                                    "border-width: 2px;"
+                                                    "border-color: white;"
+                                                    "border-style: solid;"
+                                                    "text-align: center;"
+                                                    "color: rgb(%1, 255, %1)"}.arg(255-saturation));
     return false;
 }
 
