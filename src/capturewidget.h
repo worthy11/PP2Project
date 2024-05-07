@@ -11,7 +11,7 @@ class CaptureWidget : public QLabel
 {
     Q_OBJECT
 public:
-    CaptureWidget(QWidget* parent = 0): QLabel(parent), capture(0) {}
+    CaptureWidget(QWidget* parent = 0);
 ;
 
 public slots:

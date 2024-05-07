@@ -2,6 +2,10 @@
 #include "opencv2/imgproc.hpp"
 #include <QPixmap>
 
+CaptureWidget::CaptureWidget(QWidget* parent): QLabel(parent), capture(0) {
+    this->setStyleSheet(QString("border-radius: 5px"));
+}
+
 void CaptureWidget::UpdateFrame(Model* model){
     Mat img;
 

@@ -25,7 +25,7 @@ MainWindow::MainWindow(QWidget *parent):
     ui->VideoLayout->addWidget(capture); // DISPLAY WEBCAM
     ui->CategoryPicker->setCurrentIndex(8); // SET CATEGORY TO FOODS
 
-    // ADJUST LAYOUT FOR WORD DISPLAY
+    // WORD DISPLAY STYLE
     QHBoxLayout* layout = new QHBoxLayout(ui->WordDisplay);
     layout->setAlignment(Qt::AlignCenter);
     layout->setSpacing(10);
@@ -44,13 +44,25 @@ MainWindow::MainWindow(QWidget *parent):
                                              "border-width: 2px;"
                                              "border-color: rgb(80, 80, 80);"
                                              "border-style: solid"));
+    ui->CategoryText->setStyleSheet(QString("border-style: none;"
+                                            "background-color: transparent"));
+    ui->SpellText->setStyleSheet(QString("border-style: none;"
+                                         "background-color: transparent"));
 
-    // ADJUST LAYOUT FOR TIP DISPLAY
+    // TIP DISPLAY STYLE
     tip->setStyleSheet(QString("background-color: white;"));
     ui->TipLayout->addWidget(tip); // DISPLAY TIP
     ui->TipLayout->setAlignment(Qt::AlignCenter);
-    ui->TipFrame->setStyleSheet(QString(".QFrame { border: 2px solid red;"
-                                        "background-color: white; }"));
+    ui->TipFrame->setStyleSheet(QString("background-color: white;"
+                                        "border-radius: 5px"));
+
+    // CAPTURE DISPLAY STYLE
+    ui->VideoFrame->setStyleSheet(QString("background-color: rgb(60, 60, 60);"
+                                          "border-radius: 5px;"
+                                          "border-width: 2px;"
+                                          "border-color: rgb(80, 80, 80);"
+                                          "border-style: solid"));
+    ui->VideoLayout->setAlignment(Qt::AlignCenter);
 
     generator = new GeneratorWidget(ui->WordDisplay);
 }
