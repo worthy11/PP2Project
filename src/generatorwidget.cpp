@@ -4,6 +4,7 @@
 #include <QFile>
 #include <QTextStream>
 #include <random>
+#include <map>
 
 std::string categories[12] = {
     "chartraits",
@@ -18,6 +19,31 @@ std::string categories[12] = {
     "colours",
     "furniture",
     "items"
+};
+
+std::map<std::string, int> letter_mapping = {
+    {"A", 0},
+    {"Ą", 0},
+    {'B', 1},
+    {'C', 2},
+    {'D', 3},
+    {'E', 4},
+    {'F', 5},
+    {'G', 6},
+    {'H', 7},
+    {'I', 8},
+    {'K', 9},
+    {'L', 10},
+    {'M', 11},
+    {'N', 12},
+    {'O', 13},
+    {'P', 14},
+    {'R', 15},
+    {'S', 16},
+    {'U', 17},
+    {'W', 18},
+    {'Y', 19},
+    {'Z', 20}
 };
 
 GeneratorWidget::GeneratorWidget(QWidget* p): parent(p) {

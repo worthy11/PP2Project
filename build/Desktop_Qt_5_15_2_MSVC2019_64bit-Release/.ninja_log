@@ -85,3 +85,12 @@
 18	163	7367368659655600	C:/Users/kinga/Documents/Qt Creator/PP2Project/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src/PJMRecognizer_autogen/mocs_compilation.cpp	5c0ba62a8ea8d6f5
 170	1795	7367368675931916	src/CMakeFiles/PJMRecognizer.dir/mainwindow.cpp.obj	bd6c02ef7ebf20af
 1795	1918	7367368677123205	src/PJMRecognizer.exe	c3b64cf079bd4eb7
+10	358	7367991980851791	src/PJMRecognizer_autogen/timestamp	5c0ba62a8ea8d6f5
+10	358	7367991980851791	src/PJMRecognizer_autogen/mocs_compilation.cpp	5c0ba62a8ea8d6f5
+10	358	7367991980851791	C:/Users/kinga/Documents/Qt Creator/PP2Project/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src/PJMRecognizer_autogen/timestamp	5c0ba62a8ea8d6f5
+10	358	7367991980851791	C:/Users/kinga/Documents/Qt Creator/PP2Project/build/Desktop_Qt_5_15_2_MSVC2019_64bit-Release/src/PJMRecognizer_autogen/mocs_compilation.cpp	5c0ba62a8ea8d6f5
+362	1645	7367991993989487	src/CMakeFiles/PJMRecognizer.dir/main.cpp.obj	8781e1344be8a2b5
+358	1646	7367991993999553	src/CMakeFiles/PJMRecognizer.dir/PJMRecognizer_autogen/mocs_compilation.cpp.obj	a78d7d1d7f12d8fa
+370	1674	7367991994189769	src/CMakeFiles/PJMRecognizer.dir/capturewidget.cpp.obj	b29bf2343dce5d25
+366	1772	7367991995253533	src/CMakeFiles/PJMRecognizer.dir/mainwindow.cpp.obj	bd6c02ef7ebf20af
+1772	1900	7367991996514331	src/PJMRecognizer.exe	c3b64cf079bd4eb7

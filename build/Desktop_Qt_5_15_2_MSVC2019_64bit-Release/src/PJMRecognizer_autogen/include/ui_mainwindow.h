@@ -18,6 +18,7 @@
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -35,6 +36,8 @@ public:
     QHBoxLayout *TipLayout;
     QComboBox *CategoryPicker;
     QWidget *WordDisplay;
+    QTextEdit *CategoryText;
+    QTextEdit *SpellText;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -58,7 +61,7 @@ public:
         VideoLayout->setContentsMargins(0, 0, 0, 0);
         WordGenerator = new QPushButton(centralwidget);
         WordGenerator->setObjectName(QString::fromUtf8("WordGenerator"));
-        WordGenerator->setGeometry(QRect(160, 190, 151, 41));
+        WordGenerator->setGeometry(QRect(160, 210, 151, 41));
         TipFrame = new QFrame(centralwidget);
         TipFrame->setObjectName(QString::fromUtf8("TipFrame"));
         TipFrame->setGeometry(QRect(10, 390, 121, 121));
@@ -84,14 +87,30 @@ public:
         CategoryPicker->addItem(QString());
         CategoryPicker->addItem(QString());
         CategoryPicker->setObjectName(QString::fromUtf8("CategoryPicker"));
-        CategoryPicker->setGeometry(QRect(130, 50, 221, 28));
+        CategoryPicker->setGeometry(QRect(130, 40, 221, 28));
         WordDisplay = new QWidget(centralwidget);
         WordDisplay->setObjectName(QString::fromUtf8("WordDisplay"));
-        WordDisplay->setGeometry(QRect(50, 90, 371, 80));
+        WordDisplay->setGeometry(QRect(50, 120, 371, 80));
+        CategoryText = new QTextEdit(centralwidget);
+        CategoryText->setObjectName(QString::fromUtf8("CategoryText"));
+        CategoryText->setEnabled(true);
+        CategoryText->setGeometry(QRect(200, 10, 81, 31));
+        CategoryText->setReadOnly(true);
+        SpellText = new QTextEdit(centralwidget);
+        SpellText->setObjectName(QString::fromUtf8("SpellText"));
+        SpellText->setGeometry(QRect(180, 100, 121, 31));
+        SpellText->setReadOnly(true);
         MainWindow->setCentralWidget(centralwidget);
+        CategoryPicker->raise();
+        VideoFrame->raise();
+        WordGenerator->raise();
+        TipFrame->raise();
+        WordDisplay->raise();
+        CategoryText->raise();
+        SpellText->raise();
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 475, 21));
+        menubar->setGeometry(QRect(0, 0, 475, 25));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -119,6 +138,22 @@ public:
         CategoryPicker->setItemText(10, QCoreApplication::translate("MainWindow", "Meble", nullptr));
         CategoryPicker->setItemText(11, QCoreApplication::translate("MainWindow", "Przedmioty codziennego u\305\274ytku", nullptr));
 
+        CategoryText->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:7pt;\">Kategoria:</span></p></body></html>", nullptr));
+        SpellText->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Przeliteruj s\305\202owo:</span></p></body></html>", nullptr));
     } // retranslateUi
 
 };

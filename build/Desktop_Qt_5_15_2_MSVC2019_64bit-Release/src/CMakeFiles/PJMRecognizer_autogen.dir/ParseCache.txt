@@ -227,9 +227,8 @@ C:/Users/kinga/Documents/Qt Creator/PP2Project/src/capturewidget.h
  mdp:C:/opencv/build/include/opencv2/imgcodecs.hpp
  mdp:C:/opencv/build/include/opencv2/opencv_modules.hpp
  mdp:C:/opencv/build/include/opencv2/videoio.hpp
-C:/Users/kinga/Documents/Qt Creator/PP2Project/src/generatorwidget.h
 C:/Users/kinga/Documents/Qt Creator/PP2Project/src/functions.h
-C:/Users/kinga/Documents/Qt Creator/PP2Project/src/capturewidget.cpp
+C:/Users/kinga/Documents/Qt Creator/PP2Project/src/generatorwidget.h
 C:/Users/kinga/Documents/Qt Creator/PP2Project/src/mainwindow.h
  mmc:Q_OBJECT
  mdp:C:/Qt/5.15.2/msvc2019_64/include/QtCore/QRect
@@ -470,6 +469,7 @@ C:/Users/kinga/Documents/Qt Creator/PP2Project/src/mainwindow.h
  mdp:C:/opencv/build/include/opencv2/imgcodecs.hpp
  mdp:C:/opencv/build/include/opencv2/opencv_modules.hpp
  mdp:C:/opencv/build/include/opencv2/videoio.hpp
+C:/Users/kinga/Documents/Qt Creator/PP2Project/src/capturewidget.cpp
 C:/Users/kinga/Documents/Qt Creator/PP2Project/src/model.h
 C:/Users/kinga/Documents/Qt Creator/PP2Project/src/pylandmarkrecognizer.h
 C:/Users/kinga/Documents/Qt Creator/PP2Project/src/styles.h
