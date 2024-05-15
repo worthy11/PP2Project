@@ -20,6 +20,6 @@ void CaptureWidget::UpdateFrame(Model* model){
     }
 
     img = img(Rect(floor((img.cols - img.rows) / 2), 0, img.rows, img.rows));
-    cv::resize(img, img, Size(300, 300), INTER_LINEAR);
+    cv::resize(img, img, Size(360, 360), INTER_LINEAR);
     setPixmap(QPixmap::fromImage(QImage((uchar*) img.data, img.cols, img.rows, img.step, QImage::Format_RGB888)));
 }

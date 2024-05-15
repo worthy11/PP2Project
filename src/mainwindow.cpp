@@ -64,18 +64,18 @@ MainWindow::MainWindow(QWidget *parent):
                                           "border-style: solid"));
     ui->VideoLayout->setAlignment(Qt::AlignCenter);
 
+    ui->InstructionsText->setStyleSheet(QString("background-color: rgb(60, 60, 60);"
+                                                "border-radius: 5px;"
+                                                "border-width: 2px;"
+                                                "border-color: rgb(80, 80, 80);"
+                                                "border-style: solid"));
+
     generator = new GeneratorWidget(ui->WordDisplay);
 }
 
 MainWindow::~MainWindow()
 {
-    // disconnect(timer, nullptr, nullptr, nullptr);
     delete ui;
-    // delete model;
-    // delete capture;
-    // delete tip;
-    // delete timer;
-    // delete generator;
 }
 
 void MainWindow::on_WordGenerator_clicked(){
@@ -94,5 +94,5 @@ void MainWindow::LoadTip(const QChar& letter){
     QString filepath("../../../data/img/");
     filepath.push_back(letter);
     filepath += ".png";
-    tip->setPixmap(QPixmap::fromImage(QImage(QString(filepath))));
+    tip->setPixmap(QPixmap::fromImage(QImage(QString(filepath)).scaled(150, 150, Qt::KeepAspectRatio)));
 }

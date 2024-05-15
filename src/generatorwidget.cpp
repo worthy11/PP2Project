@@ -4,7 +4,7 @@
 #include <QFile>
 #include <QTextStream>
 #include <random>
-#include <map>
+#include <iostream>
 
 std::string categories[12] = {
     "chartraits",
@@ -21,29 +21,39 @@ std::string categories[12] = {
     "items"
 };
 
-std::map<std::string, int> letter_mapping = {
-    {"A", 0},
-    {"Ą", 0},
-    {'B', 1},
-    {'C', 2},
-    {'D', 3},
-    {'E', 4},
-    {'F', 5},
-    {'G', 6},
-    {'H', 7},
-    {'I', 8},
-    {'K', 9},
-    {'L', 10},
-    {'M', 11},
-    {'N', 12},
-    {'O', 13},
-    {'P', 14},
-    {'R', 15},
-    {'S', 16},
-    {'U', 17},
-    {'W', 18},
-    {'Y', 19},
-    {'Z', 20}
+std::map<QChar, int> letter_map{
+    {L'A', 0},
+    {QChar(0x0104), 0},
+    {L'B', 1},
+    {L'C', 2},
+    {QChar(0x0106), 2},
+    {L'D', 20},
+    {L'E', 4},
+    {QChar(0x0118), 4},
+    {L'F', 5},
+    {L'G', 6},
+    {L'H', 7},
+    {L'I', 8},
+    {L'J', 8},
+    {L'K', 9},
+    {L'L', 10},
+    {QChar(0x0141), 10},
+    {L'M', 11},
+    {L'N', 12},
+    {QChar(0x0143), 12},
+    {L'O', 13},
+    {QChar(0x00D3), 13},
+    {L'P', 14},
+    {L'R', 15},
+    {L'S', 16},
+    {QChar(0x015A), 16},
+    {L'T', 5},
+    {L'U', 17},
+    {L'W', 18},
+    {L'Y', 19},
+    {L'Z', 20},
+    {QChar(0x0179), 20},
+    {QChar(0x017B), 20}
 };
 
 GeneratorWidget::GeneratorWidget(QWidget* p): parent(p) {
@@ -116,8 +126,9 @@ void GeneratorWidget::CompleteWord(){
 
 bool GeneratorWidget::CheckLetter(const std::string& predictions){
     int confidence = 0;
+    int mapping = letter_map[letter];
     for (QChar c: predictions){
-        if (c == letter) confidence += 1;
+        if (c != QChar(' ') && letter_map[c] == mapping) confidence += 1;
     }
 
     if (confidence > 10) {
