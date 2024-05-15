@@ -14,22 +14,22 @@ Upon running the app, you'll be shown a window containing the following elements
 
 When the correct gesture is detected, the current letter will start changing its colour to green. Hold the gesture for about 1 second to complete the letter - the app will automatically switch to the next one after that (unless you complete the whole word, then a new one will be generated). <br />
 
-And that's it! Happy spelling :)
+And that's it! Happy spelling :)<br />
 
 ## Installation
 Fair warning: I haven't tested the app on anything but Windows, so there's a chance it won't work if you're using a different OS.
 
 ### Downloading release
-Prerequisits: Python 3.11. The required Python modules are listed in `requirements.txt`. You can install them by running the command `pip install -r requirements.txt`. <br />
+Prerequisits: **Python 3.11**. The required Python modules are listed in `requirements.txt`. You can install them by running the command `pip install -r requirements.txt`. <br />
 
-Download the release package from [here](). After installing the prerequisits and extracting the package, you should be able to run the `PJMRecognizer.exe` file located in the `<extract_location>/PJMRecognizer/build/src/` directory.
+Download the release zip folder from [here](https://github.com/worthy11/PP2Project/releases/tag/v1.0). After installing the prerequisits and extracting the package, you should be able to run the `PJMRecognizer.exe` file located in the `<extract_location>/PJMRecognizer/build/src/` directory.
 
 ### Running from source
 Prerequisits:
-- OpenCV 4.9.0 or higher
-- Qt 5.15.2
-- Python 3.x<br />
+- **OpenCV 4.9.0** or higher
+- **Qt 5.15.2**
+- **Python 3.x**<br />
 
 The required Python modules are listed in `requirements.txt`. You can install them by running the command `pip install -r requirements.txt`. <br />
 
-I recommend a custom installation of Qt Creator containing Qt 5.15.2 along with the MSVC2019 64bit compiler and running the code from there.
+I recommend a custom installation of Qt Creator containing Qt 5.15.2 along with the **MSVC2019 64bit** compiler and running the code from there.
