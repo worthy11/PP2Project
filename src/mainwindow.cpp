@@ -22,6 +22,7 @@ MainWindow::MainWindow(QWidget *parent):
     connect(timer, SIGNAL(timeout()), this, SLOT(UpdateWidgets()));
     timer->start(60);
 
+    this->setWindowTitle("PJM Recognizer");
     ui->VideoLayout->addWidget(capture); // DISPLAY WEBCAM
     ui->CategoryPicker->setCurrentIndex(8); // SET CATEGORY TO FOODS
 
