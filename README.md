@@ -32,4 +32,4 @@ Prerequisits:
 
 The required Python modules are listed in `requirements.txt`. You can install them by running the command `pip install -r requirements.txt`. <br />
 
-I recommend a custom installation of Qt Creator containing Qt 5.15.2 along with the **MSVC2019 64bit** compiler and running the code from there.
+I recommend getting a custom installation of Qt Creator, containing Qt 5.15.2 along with the **MSVC2019 64bit** compiler, and running the code from there.
