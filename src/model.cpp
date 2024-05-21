@@ -1,6 +1,5 @@
 #include "model.h"
 #include "functions.h"
-#include <iostream>
 
 std::string labels = "ABCDEFGHIKLMNOPRSUWYZ";
 

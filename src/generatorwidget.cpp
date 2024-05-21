@@ -4,7 +4,6 @@
 #include <QFile>
 #include <QTextStream>
 #include <random>
-#include <iostream>
 
 std::string categories[12] = {
     "chartraits",

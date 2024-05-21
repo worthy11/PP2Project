@@ -36,7 +36,7 @@ else()
             mainwindow.cpp mainwindow.h mainwindow.ui
             model.cpp model.h
             pylandmarkrecognizer.cpp pylandmarkrecognizer.h
-            styles.h styles.cpp
+
         )
     endif()
 endif()

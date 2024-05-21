@@ -1,6 +1,4 @@
 #include <cmath>
-// #include <fstream> // ReadFromCSV()
-// #include <sstream>
 #include "functions.h"
 
 Mat ComputeDistances(std::array<std::vector<double>, 2>& landmarks) {
@@ -17,30 +15,4 @@ Mat ComputeDistances(std::array<std::vector<double>, 2>& landmarks) {
         }
     }
     return mat;
-}
-
-std::vector<std::vector<double>> ReadFromCSV(const char* filepath) {
-    std::vector<std::vector<double>> inputs;
-    // std::vector<double> row;
-    // std::string line, value;
-
-    // std::ifstream f(filepath);
-    // if (!f.is_open()) {
-    //     std::cout << filepath << std::endl;
-    // }
-
-    // else {
-    //     getline(f, line); // SKIP COLUMN LABELS
-    //     while (getline(f, line)) {
-    //         std::stringstream ss(line);
-    //         while (getline(ss, value, ',')) {
-    //             row.push_back(stod(value));
-    //         }
-    //         inputs.push_back(row);
-    //         row.clear();
-    //     }
-    //     f.close();
-    // }
-
-    return inputs;
 }
